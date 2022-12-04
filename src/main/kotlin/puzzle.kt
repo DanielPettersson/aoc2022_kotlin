@@ -1,5 +1,3 @@
-package puzzle
-
 import java.io.IOException
 
 fun solve(inputFileName: String, solver: (List<String>) -> Any): Any {

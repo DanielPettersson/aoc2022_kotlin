@@ -1,5 +1,3 @@
-import day1.part2
-
 fun main() {
-    println(puzzle.solve("input.txt", ::part2))
+    println(solve("input.txt", ::day4Part2))
 }

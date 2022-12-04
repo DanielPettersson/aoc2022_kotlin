@@ -1,8 +1,8 @@
-package day1
+@file:Suppress("unused")
 
 import java.lang.Integer.parseInt
 
-fun part2(lines: List<String>): Any {
+fun day1Part2(lines: List<String>): Any {
     return lines.fold(mutableListOf(1)) { acc, line ->
         if (line == "") {
             acc.add(0)
