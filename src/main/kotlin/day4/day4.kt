@@ -1,4 +1,5 @@
 @file:Suppress("unused")
+package day4
 
 fun IntRange.contains(other: IntRange): Boolean = start <= other.first && last >= other.last
 
@@ -9,7 +10,7 @@ fun createRange(input: String): IntRange {
     return IntRange(values[0].toInt(), values[1].toInt())
 }
 
-fun day4Part1(lines: List<String>): Any {
+fun part1(lines: List<String>): Any {
     return lines.filter { it.isNotBlank() }.count {
         val parts = it.split(",")
         val range1 = createRange(parts[0])
@@ -18,7 +19,7 @@ fun day4Part1(lines: List<String>): Any {
     }
 }
 
-fun day4Part2(lines: List<String>): Any {
+fun part2(lines: List<String>): Any {
     return lines.filter { it.isNotBlank() }.count {
         val parts = it.split(",")
         val range1 = createRange(parts[0])

@@ -1,4 +1,5 @@
 @file:Suppress("unused")
+package day5
 
 fun initStacks(lines: List<String>): List<ArrayDeque<String>> {
     val stacks = mutableListOf<ArrayDeque<String>>()
@@ -45,14 +46,14 @@ fun applyMultiMove(stacks: List<ArrayDeque<String>>, move: Move) {
     }
 }
 
-fun day5Part1(lines: List<String>): Any {
+fun part1(lines: List<String>): Any {
     val stacks = initStacks(lines)
     val moves = initMoves(lines)
     moves.forEach { applyMove(stacks, it) }
     return stacks.joinToString(separator = "") { it.last() }
 }
 
-fun day5Part2(lines: List<String>): Any {
+fun part2(lines: List<String>): Any {
     val stacks = initStacks(lines)
     val moves = initMoves(lines)
     moves.forEach { applyMultiMove(stacks, it) }
