@@ -1,3 +1,3 @@
 fun main() {
-    println(solve("input.txt", ::day4Part2))
+    println(solve("input.txt", ::day5Part2))
 }
