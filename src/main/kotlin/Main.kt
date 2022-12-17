@@ -1,5 +1,5 @@
-import day14.part1
+import day14.part2
 
 fun main() {
-    println(solve("input.txt", ::part1))
+    println(solve("input.txt", ::part2))
 }
